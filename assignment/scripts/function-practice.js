@@ -35,6 +35,7 @@ function multiplyThree(num1, num2, num3) {
   let total = num1 * num2 * num3;
   return console.log(`Total is: ${total}`);
 }
+// Test
 multiplyThree(1, 2, 3);
 multiplyThree(-2, -4, 5);
 multiplyThree(0, -5, 9);
@@ -64,7 +65,7 @@ function getLast(array) {
     return "undefined";
   }
 }
-
+// Test
 console.log(getLast([2, 6, 9]));
 console.log(getLast([]));
 console.log(getLast([4, 6, 7, 10, 1000, 0]));
@@ -80,6 +81,7 @@ function find(value, array) {
   }
   return false;
 }
+// Test
 console.log(find(2, [2, 3, 6]));
 console.log(find(8, [2, 3, 6]));
 console.log(find(6, [2, 3, 60, 45, 6, 79]));
@@ -98,6 +100,7 @@ function isFirstLetter(letter, string) {
   }
   return false;
 }
+// Test
 console.log("isFirstLetter - should say true", isFirstLetter("a", "apple"));
 console.log("isFirstLetter - should say false", isFirstLetter("z", "apple"));
 
@@ -109,6 +112,7 @@ function sumAll(array) {
   }
   return sum;
 }
+// Test
 console.log(sumAll([1, 2, 3])); // 6
 console.log(sumAll([-2, 6, 6])); // 10
 console.log(sumAll([0, -10, 35])); // 25
@@ -125,6 +129,7 @@ function inputArray(someArray) {
   }
   return newArray;
 }
+//test
 console.log(inputArray([0, -9, -5, 9, 5, 6]));
 console.log(inputArray([0, 0, -1, -4, -6, -20]));
 console.log(inputArray([2, -4, 5, 99, 45, 33]));
@@ -141,6 +146,29 @@ For example: month 2 (February), is part of the first quarter; month 6 (June), i
 part of the second quarter, and month 11 (November), is part of the fourth quarter.
 */
 
+// Using if...else statements
 const quarterOf = (month) => {
   // Your code here
+  if (month < 4) {
+    return 1;
+  } else if (month < 7) {
+    return 2;
+  } else if (month < 10) {
+    return 3;
+  } else {
+    return 4;
+  }
 };
+// Test
+console.log("Month 2 should return 1: " + quarterOf(2));
+console.log("Month 6 should return 2: " + quarterOf(6));
+console.log("Month 11 should return 4: " + quarterOf(11));
+
+// Using ternary operator
+const quarterOfVersionTwo = (month) => {
+  return month < 4 ? 1 : month < 7 ? 2 : month < 10 ? 3 : 4;
+};
+// Test
+console.log("Month 2 should return 1: " + quarterOfVersionTwo(2));
+console.log("Month 6 should return 2: " + quarterOfVersionTwo(6));
+console.log("Month 11 should return 4: " + quarterOfVersionTwo(11));
