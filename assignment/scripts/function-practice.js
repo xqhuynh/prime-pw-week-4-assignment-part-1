@@ -116,7 +116,31 @@ console.log(sumAll([0, -10, 35])); // 25
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+function inputArray(someArray) {
+  let newArray = [];
+  for (let i = 0; i < someArray.length; i++) {
+    if (someArray[i] > 0) {
+      newArray.push(someArray[i]);
+    }
+  }
+  return newArray;
+}
+console.log(inputArray([0, -9, -5, 9, 5, 6]));
+console.log(inputArray([0, 0, -1, -4, -6, -20]));
+console.log(inputArray([2, -4, 5, 99, 45, 33]));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+/*
+Given a month as an integer from 1 to 12, return to which quarter of the year it 
+belongs as an integer number.
+
+For example: month 2 (February), is part of the first quarter; month 6 (June), is 
+part of the second quarter, and month 11 (November), is part of the fourth quarter.
+*/
+
+const quarterOf = (month) => {
+  // Your code here
+};
