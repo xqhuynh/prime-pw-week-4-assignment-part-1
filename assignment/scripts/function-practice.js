@@ -35,7 +35,7 @@ function multiplyThree(num1, num2, num3) {
   let total = num1 * num2 * num3;
   return console.log(`Total is: ${total}`);
 }
-// Test
+// Test function
 multiplyThree(1, 2, 3);
 multiplyThree(-2, -4, 5);
 multiplyThree(0, -5, 9);
@@ -66,9 +66,9 @@ function getLast(array) {
   }
 }
 // Test
-console.log(getLast([2, 6, 9]));
-console.log(getLast([]));
-console.log(getLast([4, 6, 7, 10, 1000, 0]));
+console.log("Last number is: " + getLast([2, 6, 9]));
+console.log("Last number is: " + getLast([]));
+console.log("Last number is: " + getLast([4, 6, 7, 10, 1000, 0]));
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
@@ -82,10 +82,10 @@ function find(value, array) {
   return false;
 }
 // Test
-console.log(find(2, [2, 3, 6]));
-console.log(find(8, [2, 3, 6]));
-console.log(find(6, [2, 3, 60, 45, 6, 79]));
-console.log(find(298, [-99, 3345, -22, 298, 343, 66]));
+console.log("Should return true: " + find(2, [2, 3, 6]));
+console.log("Should return false: " + find(8, [2, 3, 6]));
+console.log("Should return true: " + find(6, [2, 3, 60, 45, 6, 79]));
+console.log("Should return true: " + find(-22, [-99, 3345, -22, 298, 343, 66]));
 
 // ----------------------
 // Stretch Goals
@@ -113,9 +113,9 @@ function sumAll(array) {
   return sum;
 }
 // Test
-console.log(sumAll([1, 2, 3])); // 6
-console.log(sumAll([-2, 6, 6])); // 10
-console.log(sumAll([0, -10, 35])); // 25
+console.log("Sum of array is: " + sumAll([1, 2, 3])); // 6
+console.log("Sum of array is: " + sumAll([-2, 6, 6])); // 10
+console.log("Sum of array is: " + sumAll([0, -10, 35])); // 25
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
@@ -130,9 +130,9 @@ function inputArray(someArray) {
   return newArray;
 }
 //test
-console.log(inputArray([0, -9, -5, 9, 5, 6]));
-console.log(inputArray([0, 0, -1, -4, -6, -20]));
-console.log(inputArray([2, -4, 5, 99, 45, 33]));
+console.log("Positive numbers are: " + inputArray([0, -9, -5, 9, 5, 6]));
+console.log("Positive numbers are: " + inputArray([0, 0, -1, -4, -6, -20]));
+console.log("Positive numbers are: " + inputArray([2, -4, 5, 99, 45, 33]));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
