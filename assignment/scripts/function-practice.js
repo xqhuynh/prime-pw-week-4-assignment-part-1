@@ -140,9 +140,12 @@ function inputArray(someArray) {
   return newArray;
 }
 //test
-console.log("Positive numbers are: " + inputArray([0, -9, -5, 9, 5, 6]));
-console.log("Positive numbers are: " + inputArray([0, 0, -1, -4, -6, -20]));
-console.log("Positive numbers are: " + inputArray([2, -4, 5, 99, 45, 33]));
+let inputArrayTest1 = inputArray([0, -9, -5, 9, 5, 6]);
+let inputArrayTest2 = inputArray([0, 0, -1, -4, -6, -20]);
+let inputArrayTest3 = inputArray([2, -4, 5, 99, 45, 33]);
+console.log("Positive numbers are: " + inputArrayTest1);
+console.log("Positive numbers are: " + inputArrayTest2);
+console.log("Positive numbers are: " + inputArrayTest3);
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
