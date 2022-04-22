@@ -169,16 +169,22 @@ const quarterOf = (month) => {
     return 4;
   }
 };
-// Test
-console.log("Month 2 should return 1: " + quarterOf(2));
-console.log("Month 6 should return 2: " + quarterOf(6));
-console.log("Month 11 should return 4: " + quarterOf(11));
+// Test function
+let quarterOfTest1 = quarterOf(2);
+let quarterOfTest2 = quarterOf(6);
+let quarterOfTest3 = quarterOf(11);
+console.log("Month 2 should return 1: " + quarterOfTest1);
+console.log("Month 6 should return 2: " + quarterOfTest2);
+console.log("Month 11 should return 4: " + quarterOfTest3);
 
 // Using ternary operator
 const quarterOfVersionTwo = (month) => {
   return month < 4 ? 1 : month < 7 ? 2 : month < 10 ? 3 : 4;
 };
-// Test
-console.log("Month 2 should return 1: " + quarterOfVersionTwo(2));
-console.log("Month 6 should return 2: " + quarterOfVersionTwo(6));
-console.log("Month 11 should return 4: " + quarterOfVersionTwo(11));
+// Test function
+let quarterOfVersionTwoTest1 = quarterOfVersionTwo(2);
+let quarterOfVersionTwoTest2 = quarterOfVersionTwo(6);
+let quarterOfVersionTwoTest3 = quarterOfVersionTwo(11);
+console.log("Month 2 should return 1: " + quarterOfVersionTwoTest1);
+console.log("Month 6 should return 2: " + quarterOfVersionTwoTest2);
+console.log("Month 11 should return 4: " + quarterOfVersionTwoTest3);
