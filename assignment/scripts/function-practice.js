@@ -65,10 +65,13 @@ function getLast(array) {
     return "undefined";
   }
 }
-// Test
-console.log("Last number is: " + getLast([2, 6, 9]));
-console.log("Last number is: " + getLast([]));
-console.log("Last number is: " + getLast([4, 6, 7, 10, 1000, 0]));
+// Test function
+let testLast1 = getLast([2, 6, 9]);
+let testLast2 = getLast([]);
+let testLast3 = getLast([4, 6, 7, 10, 1000, 0]);
+console.log("Last number is: " + testLast1);
+console.log("Last number is: " + testLast2);
+console.log("Last number is: " + testLast3);
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
@@ -81,11 +84,15 @@ function find(value, array) {
   }
   return false;
 }
-// Test
-console.log("Should return true: " + find(2, [2, 3, 6]));
-console.log("Should return false: " + find(8, [2, 3, 6]));
-console.log("Should return true: " + find(6, [2, 3, 60, 45, 6, 79]));
-console.log("Should return true: " + find(-22, [-99, 3345, -22, 298, 343, 66]));
+// Test function
+let testFind1 = find(2, [2, 3, 6]);
+let testFind2 = find(8, [2, 3, 6]);
+let testFind3 = find(6, [2, 3, 60, 45, 6, 79]);
+let testFind4 = find(-22, [-99, 3345, -22, 298, 343, 66]);
+console.log("Should return true: " + testFind1);
+console.log("Should return false: " + testFind2);
+console.log("Should return true: " + testFind3);
+console.log("Should return true: " + testFind4);
 
 // ----------------------
 // Stretch Goals
@@ -100,7 +107,7 @@ function isFirstLetter(letter, string) {
   }
   return false;
 }
-// Test
+// Test function
 console.log("isFirstLetter - should say true", isFirstLetter("a", "apple"));
 console.log("isFirstLetter - should say false", isFirstLetter("z", "apple"));
 
@@ -112,10 +119,13 @@ function sumAll(array) {
   }
   return sum;
 }
-// Test
-console.log("Sum of array is: " + sumAll([1, 2, 3])); // 6
-console.log("Sum of array is: " + sumAll([-2, 6, 6])); // 10
-console.log("Sum of array is: " + sumAll([0, -10, 35])); // 25
+// Test function
+let testSum1 = sumAll([1, 2, 3]); // 6
+let testSum2 = sumAll([-2, 6, 6]); // 10
+let testSum3 = sumAll([0, -10, 35]); // 25
+console.log("Sum of array is: " + testSum1);
+console.log("Sum of array is: " + testSum2);
+console.log("Sum of array is: " + testSum3);
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
